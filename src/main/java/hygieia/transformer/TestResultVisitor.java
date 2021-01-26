@@ -8,6 +8,7 @@ import com.capitalone.dashboard.model.quality.CucumberJsonReport;
 import com.capitalone.dashboard.model.quality.FindBugsXmlReport;
 import com.capitalone.dashboard.model.quality.JacocoXmlReport;
 import com.capitalone.dashboard.model.quality.JunitXmlReport;
+import com.capitalone.dashboard.model.quality.JunitXmlReportV2;
 import com.capitalone.dashboard.model.quality.MochaJsSpecReport;
 import com.capitalone.dashboard.model.quality.PmdReport;
 import com.capitalone.dashboard.model.quality.QualityVisitor;
@@ -39,6 +40,11 @@ public class TestResultVisitor implements QualityVisitor<TestResult> {
 
     @Override
     public void visit(JunitXmlReport junitXmlReport) {
+        // no impl... could expand
+    }
+
+    @Override
+    public void visit(JunitXmlReportV2 junitXmlReportTestSuites) {
         // no impl... could expand
     }
 
